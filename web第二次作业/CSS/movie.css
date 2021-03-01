@@ -1,0 +1,122 @@
+/*19335040丁维力*/
+/*tmnt.html的样式表*/
+
+body{
+	background: url(../assets/background.png);
+	font-size: 8pt;
+	font-family: Verdana,Tahoma,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+#Rancid_Tomatoes{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background: url(../assets/bannerbackground.png);
+}
+h1{
+	font-size: 24pt;
+	font-weight: bolder;
+	text-align: center;
+	font-family: Tahoma,Verdana,sans-serif;
+}
+#title{
+	position: relative;
+	top: 25%;
+}
+#content{
+	width: 800px;
+	margin: 0 auto;
+	border-top: 4px solid;
+	border-right: 4px solid;
+	border-bottom: 4px solid;
+	border-left: 4px solid;
+	border-color: grey;
+	overflow: hidden;
+	position: relative;
+}
+#images_of_w3c{
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+}
+#comment{
+	width: 550px;
+	float: left;
+}
+#comment_top{
+	background-image: url(../assets/rottenbackground.png);
+	height: 83px;
+	font-weight: normal;
+	font-size: 8pt;
+	color: white;
+	position: relative;
+}
+#child{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#percent{
+	font-weight: bolder;
+	font-size: 48pt;
+	color: red;
+}
+#left{
+	float: left;
+	width: 47%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+#left img,#right img{
+	float: left;
+	clear: left;
+	padding-right: 5px; 
+}
+#right{
+	float: right;
+	width: 47%;
+	margin-right: 2%;
+}
+#left_fir,#left_thi,#left_fif,#left_sev,#right_fir,#right_thi,#right_fif,#right_sev{
+	border-right: 2px solid;
+	border-left: 2px solid;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	border-color: grey;
+	background-color: #E1D697;
+	font-weight: bolder;
+	padding-left: 8px;
+	padding-top: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	overflow: hidden;
+}
+#left_sec,#left_fou,#left_six,#left_eig,#right_sec,#right_fou,#right_six,#right_eig{
+	margin-bottom: 3em;
+}
+#summary{
+	float: right;
+	width: 250px;
+	background-color: #A2B964;
+}
+#content_of_summary{
+	font-family: Arial,sans-serif;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	padding: 0;
+}
+dt{
+	font-weight: bolder;
+	margin-top: 1em;
+}
+#page_number{
+	background-color: #A2B964;
+	text-align: center;
+	padding: 5px;
+	width: 100%;
+	margin: 0;
+	float: left;
+}

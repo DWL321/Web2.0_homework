@@ -1,0 +1,142 @@
+/*19335040 丁维力*/
+/*迷宫小游戏样式表*/
+/*设置最大容器占屏幕100%，去除多余的边距和缩进，设置背景图片和主要字体*/
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden; 
+	font-family: "Century Gothic",Futura,Verdana,sans-serif;
+	background: url(../assest/background.jpg) center no-repeat;
+	background-size: 100%;
+}
+/*设置标题位置及字体样式*/
+header{
+	font-size: 28pt;
+	font-weight: initial;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+#top{
+	text-align: center;
+	font-size: 17pt;
+}
+/*设置结果显示的位置及字体样式*/
+#result{
+	height: 30px;
+	text-align: center;
+	font-size: 25pt;
+	font-weight: bolder;
+	color: red;
+	margin-top: -22px;
+	margin-bottom: 22px;
+}
+/*设置游戏区样式*/
+#game{
+	width: 540px;
+    height: 324px;
+    left: 50%;
+    margin-left: -270px;
+    position: relative;
+}
+.wall{
+	background-color: #AAEEEE;
+}
+#wall1{
+	height: 54px;
+	border: 1.5px solid;
+	border-bottom: none;
+	border-color: black;
+}
+#wall2,#wall3{
+	width: 162px;
+	height: 162px;
+	float: left;
+	border: 1.5px solid;
+	border-color: black;
+	border-top: none;
+}
+#road1{
+	border-top: 1.5px solid;
+	border-color: black;
+	height: 54px;
+	width: 213px;
+	position: relative;
+	left: 50%;
+	margin-left: -107px;
+}
+#road2,#road3{
+	height: 162px;
+	width: 54px;
+	border-bottom: 1.5px solid;
+	border-color: black;
+}
+#road4,#road5{
+	height: 54px;
+	width: 165px;
+	border-bottom: 1.5px solid;
+	border-color: black;
+	margin-top: -55.5px;
+}
+#wall2,#road2,#road4{
+	float: left;
+}
+#wall3,#road3,#road5{
+	float: right;
+}
+#wall4{
+	height: 162px;
+	width: 108px;
+	border: 1.5px solid;
+	border-color: black;
+	border-bottom: none;
+	position: relative;
+	left: 50%;
+	margin-left: -54px;
+}
+#wall5{
+	height: 54px;
+	border: 1.5px solid;
+	border-color: black;
+	border-top: none;
+}
+#S,#E{
+	width: 45px;
+	height: 45px;
+	border: 1.5px solid;
+	border-color: black;
+	font-weight: initial;
+	font-size: 30pt;
+	font-family: Arial,sans-serif;
+	text-align: center;
+	position: absolute;
+	top: 222px;
+}
+#S{
+	background-color: rgb(133, 255, 125);
+}
+#E{
+	background-color: rgb(132, 132, 254);
+	right: 0;
+}
+/*设置下方提示区样式*/
+#bottom{
+	width: 630px;
+	position: relative;
+	left: 50%;
+	margin-left: -315px;
+	font-size: 13pt;
+	font-weight: normal;
+}
+#wall_example{
+	width: 70px;
+	height: 25px;
+	background-color: #AAEEEE;
+	position: relative;
+	left: 50%;
+	margin-left: -35px;
+	border: 1.5px solid;
+	border-color: black;
+}

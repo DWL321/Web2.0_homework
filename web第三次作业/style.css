@@ -1,0 +1,199 @@
+/*19335040 丁维力*/
+/*Ring Menu样式表*/
+/*注：info内数据与作业网站不同是因为我未修改html的内容*/
+/*设置最大容器战屏幕100%，去除多余的边距和缩进*/
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden; 
+}
+/*对主体容器定位*/
+#at-plus-container{
+	position: relative;
+	width: 180px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+/*设置info-bar部分样式*/
+#info-bar{
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	bottom: 110px;
+	left: 80px;
+	border-radius: 50%;
+	transition: all 0.5s;
+	opacity: 0;
+	overflow: hidden;
+}
+#info-bar ul{
+	padding:0 10px 0 0;
+	margin-top: 0;
+	font-weight: bolder;
+}
+#info-bar li{
+	list-style: none;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: -5px;
+	text-align: center;
+	margin-left: 0;
+	color: white;
+}
+#info-bar li img{
+	vertical-align: middle;
+}
+#info-bar li span{
+	margin-left: 8px;
+}
+#info-bar li.mine{
+	display: inline-block;
+	width: 50%;
+	color: #079E6E;
+	box-sizing: border-box;
+}
+#info-bar li.posted{
+	padding-left: 15px;
+}
+#info-bar li.comment{
+	font-size: 30px;
+}
+#button:hover #info-bar{
+	width: 129px;
+	height: 129px;
+	bottom: 144px;
+	left: 25px;
+	border-radius: 50%;
+	background-color: rgb(126,126,126);
+	opacity: 1;
+}
+/*设置control-ring-container部分样式*/
+#control-ring-container{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	bottom: 20px;
+	left: 0px;
+	border-radius: 50%;
+}
+#control-ring-container li{
+	position: absolute;
+	display: block;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: rgb(102,102,102) center no-repeat;
+	background-size: 18px 18px;
+	list-style: none; 
+}
+#control-ring li{
+	margin-top: 59px;
+	margin-left: 34px;
+	background-color: white;
+	transition: all 0.5s;
+	opacity: 0;
+}
+#button:hover #control-ring li:nth-child(1){
+	left: 41px;
+	top: 19px;
+	margin-top: 20px;
+	margin-left: -30px;
+	background-color: rgb(102,102,102);
+	background-image: url(assets/images/nomask.png);
+	opacity: 1;
+}
+#button:hover #control-ring li:nth-child(2){
+	margin-top: 60px;
+	margin-left: -40px;
+	background-color: rgb(102,102,102);
+	background-image: url(assets/images/history.png);
+	opacity: 1;
+}
+#button:hover #control-ring li:nth-child(3){
+	left: 35px;
+	top: 11px;
+	margin-top: 102px;
+	margin-left: -20px;
+	background-color: rgb(102,102,102);
+	background-image: url(assets/images/message.png);
+	opacity: 1;
+}
+.unread{
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	padding-top: 0.5px;
+	padding-left: 6px;
+	box-sizing: border-box;
+	font-size: 14px;
+	background-color: white;
+	transition: all 0.5s;
+	opacity: 0;
+}
+#button:hover .unread{
+	position: absolute;
+	top: -4px;
+	left: 20px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: rgb(255,58,49);
+	color: white;
+	padding-top: 0.5px;
+	padding-left: 6px;
+	box-sizing: border-box;
+	font-size: 14px;
+	opacity: 1;
+}
+#button:hover #control-ring li:nth-child(4){
+	left: 34px;
+	top: 5px;
+	margin-top: 129px;
+	margin-left: 14px;
+	background-color: rgb(102,102,102);
+	background-image: url(assets/images/setting.png);
+	opacity: 1;
+}
+#button:hover #control-ring li:nth-child(5){
+	left: 31px;
+	top: 3px;
+	margin-top: 128px;
+	margin-left: 60px;
+	background-color: rgb(102,102,102);
+	background-image: url(assets/images/signin.png);
+	opacity: 1;
+}
+/*设置apb类部分样式*/
+.apb{
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	bottom: 97px;
+	left: 77px;
+	border-radius: 50%;
+	background: url(assets/images/atplus_white.png) center no-repeat;
+	background-size: 20px 15px;
+	background-color: rgb(152,158,209);
+	transition: all 0.5s;
+}
+#button:hover .apb{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 85px;
+	left: 65px;
+	border-radius: 50%;
+	background: url(assets/images/atplus_green.png) center no-repeat;
+	background-size: 35px 25px;
+	background-color: rgba(48, 63, 159, 1);
+	opacity: 1;
+}

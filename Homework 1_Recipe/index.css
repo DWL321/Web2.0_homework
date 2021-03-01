@@ -1,0 +1,14 @@
+body{
+	background:url(https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg);
+	background-size: 50%;
+	text-align: center;
+	color: #A3A400;
+	font-size: 20pt;
+} 
+header{
+	font-size: 40pt;
+	font-weight: bold;
+	text-align: center;
+	color: rgb(90,190,90);
+	background-color: #FFFFC8;
+}
