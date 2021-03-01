@@ -1,0 +1,90 @@
+/*19335040 丁维力*/
+/*拼图小游戏样式表*/
+/*设置最大容器占屏幕100%，去除多余的边距和缩进，设置背景图片和主要字体*/
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;  
+	font-family: "Century Gothic",Futura,Verdana,sans-serif;
+	background: url(../assest/timg.jpg) center no-repeat;
+	background-size: 100%;
+	text-align: center;
+}
+/*设置标题位置及字体样式*/
+header{
+	font-size: 28pt;
+	font-weight: bolder;
+	text-align: center;
+	margin-top: 10px;
+}
+/*设置游戏玩法选择区样式*/
+#set_dif,#set_pat{
+	width: 400px;
+	margin-top: 50px;
+	font-size: 20pt;
+	line-height: 50px;
+}
+#set_dif{
+	float: left;
+	color: gold;
+}
+#set_pat{
+	color: yellowgreen;
+	float: right;
+}
+/*冒险模式下倒计时300秒的样式*/
+#time{
+	margin-top: 10px;
+	color: red;
+	font-size: 50pt;
+	font-weight: bolder;
+}
+/*设置结果显示的位置及字体样式*/
+#result{
+	height: 30px;
+	text-align: center;
+	font-size: 25pt;
+	font-weight: bolder;
+	color: red;
+	margin-bottom: 20px;
+}
+/*设置游戏区样式*/
+#game{
+	width: 630px;
+    height: 630px;
+    left: 50%;
+    margin-left: -315px;
+    border: 2px #AAEEEE solid;
+    position: relative;
+    background-size: 100%;
+}
+/*设置开始键基础样式*/
+#button{
+	width: 150px;
+	height: 30px;
+	left: 50%;
+    margin-left: -75px;
+    position: relative;
+}
+#start{
+	text-align: center;
+	height: 30px;
+	width: 150px;
+	color: white;
+	background-color:purple;
+    margin-top: 20px;
+    font-size: 18pt; 
+    box-shadow: 5px 5px 3px lightpink;
+    transition: all 0.5s;
+}
+/*当玩家鼠标移到开始键上时按键变大*/
+#button:hover #start{
+	height: 50px;
+	width: 250px;
+	opacity: 1;
+	margin-left: -62.5px;
+	margin-top: 10px;
+	font-size: 30pt;
+}

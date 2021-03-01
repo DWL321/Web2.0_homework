@@ -1,0 +1,37 @@
+<!--19335040丁维力-->
+<!--拼图小游戏html文件-->
+<!-- 玩法简介： 玩家点击左侧六个等级选择难度（简单3*3，中等4*4，较难5*5，困难6*6，极难7*7，地狱8*8，默认为简单）
+然后点击右侧选择游戏模式（冒险模式倒计时300秒，自由模式无倒计时，默认为自由模式），点击下方重新开始拼图打乱，游戏开始（冒险模式倒计时开始），提示GAME START。
+拼图恢复成功会提示YOU WIN，再次点击重新开始自动进入下一个难度等级。冒险模式时间到了以后若没有通关，提示GAME OVER，未点击重新开始不能移动拼图。-->
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="utf-8">
+	<title>Fifteen Puzzle</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <script src="../js/jquery.js" type="text/javascript"></script>
+    <script src="../js/lodash.js" type="text/javascript"></script>
+    <script src="../js/Fifteen_Puzzle.js"></script>
+</head>
+<body>
+	<header>拼图游戏</header> 
+	<div id="set_dif">
+		<div><input type="radio" name="difficulty" class="" value="0" >简单</div>
+		<div><input type="radio" name="difficulty" value="1" >中等</div>
+		<div><input type="radio" name="difficulty" value="2" >较难</div>
+		<div><input type="radio" name="difficulty" value="3" >困难</div>
+		<div><input type="radio" name="difficulty" value="4" >极难</div>
+		<div><input type="radio" name="difficulty" value="5" >地狱</div>
+	</div>
+	<div id="set_pat">
+		<div><input type="radio" name="pattern" value="1">冒险模式</div>
+		<div><input type="radio" name="pattern" value="2">自由模式</div>
+		<div id="timer"></div>
+	</div>
+	<div id="result"></div>
+	<div id="game"></div>
+	<div id="button">
+		<div id="start">重新开始</div>
+	</div>
+</body>
+</html>

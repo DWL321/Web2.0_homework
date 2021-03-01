@@ -1,0 +1,44 @@
+/*19335040 丁维力*/
+/*Table Sorter css文件*/
+h1,h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+table{
+    border-collapse: collapse;
+    border: 1.5px solid grey;
+    font-family: Arial,sans-serif;
+}
+th,td{
+    text-align: left;
+    height: 16px;
+    border: 1.5px solid grey;
+}
+th{
+    background-color: rgb(3, 27, 127);
+    font-weight: bold;
+    color: white;
+    position: relative;
+    background-image:url(../assest/ascend); 
+
+}
+#todo th,td{
+    width: 180px;
+}
+#staff th,td{
+    width: 150px;
+}
+th.up::after,th.down::after{
+    background-color: rgb(166, 175, 252);
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    width: 16px; 
+    height: 16px;
+    content: "";
+}
+th.up::after{
+    background-image: url(../assest/ascend.png);
+}
+th.down::after{
+    background-image: url(../assest/descend.png);
+}
